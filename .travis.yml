@@ -1,3 +1,4 @@
+before_script: cd SimMonitor.v5
 language: android
 android:
   components:
