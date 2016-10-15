@@ -1,7 +1,8 @@
 before_script: cd SimMonitor.v5
 language: android
+install: 
+  - true
 android:
-  install: true
   components:
     # Uncomment the lines below if you want to
     # use the latest revision of Android SDK Tools
