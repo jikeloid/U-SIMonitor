@@ -148,6 +148,8 @@ public class MainActivity extends Activity {
 				e.printStackTrace();
 				Log.e(TAG, "JSchException: " + e.getMessage());
 			} 
+			catch (IOException e) {
+			}
 			catch (SftpException e)
 			{
 				e.printStackTrace();
