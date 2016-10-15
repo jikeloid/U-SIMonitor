@@ -14,7 +14,7 @@ android:
     # The SDK version used to compile your project
     - android-22
 
-script: echo 123
+script: ant
 env:
   global:
     # install timeout in minutes (2 minutes by default)
