@@ -16,4 +16,12 @@ android:
 
 script: ant debug
 
+deploy:
+  provider: releases
+    api_key:
+      secure: "g2U40C3UnlBgMom+2SMdQX40fXwjz11pDRSxDlfBBjZglP8TISSSzU4v02lgGdvpr+X5xmttYnWMwA4yW0w+4xK2wJAQAD0/IuZZAA4asEZKOhNV189jBY2FP7Vb36/pfVQQUrCE/10MyaazZTTuOWLmT+atnsUFz7/M29NfOjZa5dA5hYE+gx5HuHgAUwu296linU+iqcCpvAj16y+fSNMllWVlXdB2EH2ULte6x9x4RQNXygXZVgUEjYAoh8+lOcAdowMNf3kzM10oxppz+nHxyRkMLQW5W2MW3C7yYYAK0qujtmnnYXVGljlTBPDesqsK60Lqp3OAtbOJhLsZFNtKKZcEtNEgz1VTzhdYL64bn3rXwUSob+UbtxEo3SU6oxqjmznFJ821qew96PNnlSyJHAdYh0U+e3Qnx4fpiNaBzk/KsXgrEuIb5UYdAGdUyHMqnY2U16799GCYikY48PlDrzhlbVX209ixtgqMAfu11xk8yuG84IZm5gdGCl/hhMycquPzbfLHh6jQSdf8VpBeyWtsiRNNM8FOWBZXpwto4fLgoz4DHO+o9Ze+w5q4LdGoJNI0Y2ZhnmXNHupqQe4atPeO1yVtUGfumVNoM+MlWj/Fx6g/BkPlkLIKfGo2/n66/HUhcEXoLailnzFvq1HfsApsmRQgwjUK7SxnW0I="
+  file: 'SimMonitor.v5/bin/MainActivity-debug.apk'
+  skip_cleanup: true
+  on:
+    tags
     
