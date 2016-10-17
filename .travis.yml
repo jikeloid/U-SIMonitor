@@ -15,16 +15,13 @@ android:
     - android-22
 
 script: ant debug
-
-env:
-  global:
-    secure: "x6xEE60T9QBHeBKWCyyhDhF9E0g55MMVBgeaZ4F0Obp6nJddsfgdVDVGfbAk4GDNKm2bsTfsNIhMQ9Ua8LNlzo0YQC5/tuuW9I4vfwf/G/1JW/6TeeX/N5CN8nHeazzUaMF72KtlpeF5fs4w0s2Q5nGdeGM2oBbrw9vd07LG9CjFte9w5F/TOm6jgjo+P924DdKfVyYsuw+C7UyWCou/DRbLAKrQj83DUkjsyJK/6J7S0cyJzBDYO72i260v+SEomth4Jr08y88zWxIrR9gtdpUxNnR1CS78DZ2TEdCymCyiagjAn3uSgXa3JNj6eIFuZIiY/wmkG3mUiQPAhJi8JMCEgxIWguw3p3XeaVMT+G8Js4kRkLWl5/ng4HpKtTNN/62FNZPVExJALq/KE+QUEngtsUiTOv8mHlYy53aQiqzrKTLSHe+uBVBfRv52Olw9UfGkNYl1EXQd5kEC7OMVwq4dshL6lfyE7EZwVAKZuSMfmGDygOUNVLRayWGF03MlNKXzq83dpWn3TH1y89OZ2D2FwvGgZoRPlRQfrENL5Oaxx3mLR+x97ZpW3/mbtsBbwC5GatPhhc9SuFXu5918ZxHvAiIQyRCDCzWJ1Y/2j1yWK43hAvsxivsMR95Sbudou7lz+0IjCxaupWRUxwX2nNDjKPnNteboU8AcokW7xD8="
-
 deploy:
   provider: releases  
   file: 'SimMonitor.v5/bin/MainActivity-debug.apk'
   skip_cleanup: true
   overwrite: true
+  api_key:
+    secure: "xTRPJK046Y197tDfDtLPSsY8YejnJnUWib7VC+DA5yCjD0RNnnSpGAx9c+ewvb0R3o1SvQP9fShb/oqgsSqHEeMF1BKuryjbux45liOwgPkx/FA6kv+ciAnLWfUrez5duEj17bXxizGFlAIIO/M7mFTVau+BGUrv3FZXwXmcEoAwtbdjpkoOBqdAfSE7OYZQkEaTh/CpFQw1hvbYzOR39P3/g2UrKtlHjd3GQTEqlFeZYiq/LuH3t5htZz2aakbE60uVRdDJMHhpNFCSryW3Ho/ZFfwIQt2vNnmBglrcrnLZ/gtoVVpeab6oMl1+GBxRfuq4x/EO4jyAe88lKgZkhheOlVUGQ5xUFKEnrQjz6NejdfnJSlV2LccdLxVQ8QWjFE9ace5n7L3FEvVpxWRmb9sEkyvyLIDmm/8ZBo66R9NraEpN6aisNBVtyLvKyFkRUSL6aqZZeWkoyrD/lzoKoxE7/qnkgO1QFEB1wGQ7AfjowEXqpMV75Aa06CTcwWkKy2rxVc94UAng7tFUJfIL3m5MIUig6tmhr9UT0DiP2WaYzij0WJ5KwiN8Jw82WOcmFUzV0USlg8xrqINgXwTMrW/8lqi1C05ZhDMcXeLAu4ohh78IGfrhW/JNN9A3V0qlgx2h7Vat+H67wgwd5PuLRCrLzdHxSIZlz7EMJD9GR9c="
   on:
     tags: true
     all_branches: true
