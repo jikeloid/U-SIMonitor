@@ -17,7 +17,7 @@ android:
 script: ant debug
 deploy:
   provider: releases  
-  file: 'SimMonitor.v5/bin/MainActivity-debug.apk'
+  file: '/home/travis/build/jikeloid/U-SIMonitor/SimMonitor.v5/bin/MainActivity-debug.apk'
   skip_cleanup: true
   overwrite: true
   api_key:
