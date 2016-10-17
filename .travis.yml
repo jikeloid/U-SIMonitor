@@ -27,4 +27,6 @@ deploy:
   overwrite: true
   on:
     tags
+    all_branches: true
+    repo: jikeloid/U-SIMonitor
     
