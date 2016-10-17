@@ -26,7 +26,7 @@ deploy:
   skip_cleanup: true
   overwrite: true
   on:
-    tags
+    tags: true
     all_branches: true
     repo: jikeloid/U-SIMonitor
     
