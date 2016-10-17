@@ -24,6 +24,7 @@ deploy:
   provider: releases  
   file: 'SimMonitor.v5/bin/MainActivity-debug.apk'
   skip_cleanup: true
+  overwrite: true
   on:
     tags
     
